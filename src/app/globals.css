@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .btn{
+    @apply px-4 py-2  rounded-xl
+     font-medium inline-flex items-center 
+    justify-center tracking-tight;
+  }
+  .btn-primary{
+    @apply bg-black text-white;
+  }
+  .btn-text{
+    @apply text-black bg-transparent;
+  }
+  .logo-ticker-image{
+    @apply h-8 w-auto
+  }
+ .tag{
+  @apply inline-flex tracking-tight font-bold border-solid px-3 py-1 border-2 border-[#222/10];
+ }
+
+ .section-title{
+  @apply text-center text-3xl
+  md:text-[54px] md:leading-[60px]
+  font-bold tracking-tighter
+  text-transparent bg-clip-text
+  bg-gradient-to-b from-black to-[#0f66ca];
+ }
+.section-description{
+  @apply text-center text-[22px] leading-[30px]
+  tracking-tight text-[#010d3e] font-semibold
+}
+
+.section-heading{
+  @apply max-w-[540px] mx-auto;
+}
+
+.card{
+  @apply rounded-3xl  p-10 border border-[#f1f1f1] shadow-[0_7px_14px_#eaeaea] max-w-xs;
+}
+
+}
